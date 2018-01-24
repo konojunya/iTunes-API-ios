@@ -13,6 +13,8 @@
 		9A568E772018096E0039CD38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A568E752018096E0039CD38 /* Main.storyboard */; };
 		9A568E792018096E0039CD38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A568E782018096E0039CD38 /* Assets.xcassets */; };
 		9A568E7C2018096E0039CD38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A568E7A2018096E0039CD38 /* LaunchScreen.storyboard */; };
+		9A568E8420180BFD0039CD38 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A568E8320180BFD0039CD38 /* TableViewCell.swift */; };
+		9A568E8720180E4A0039CD38 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A568E8620180E4A0039CD38 /* Api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9A568E782018096E0039CD38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A568E7B2018096E0039CD38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A568E7D2018096E0039CD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A568E8320180BFD0039CD38 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		9A568E8620180E4A0039CD38 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +82,24 @@
 		9A568E702018096E0039CD38 /* iTunes-API-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9A568E8520180E3F0039CD38 /* Api */,
 				9A568E712018096E0039CD38 /* AppDelegate.swift */,
 				9A568E732018096E0039CD38 /* ViewController.swift */,
 				9A568E752018096E0039CD38 /* Main.storyboard */,
 				9A568E782018096E0039CD38 /* Assets.xcassets */,
 				9A568E7A2018096E0039CD38 /* LaunchScreen.storyboard */,
 				9A568E7D2018096E0039CD38 /* Info.plist */,
+				9A568E8320180BFD0039CD38 /* TableViewCell.swift */,
 			);
 			path = "iTunes-API-ios";
+			sourceTree = "<group>";
+		};
+		9A568E8520180E3F0039CD38 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				9A568E8620180E4A0039CD38 /* Api.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A568E8420180BFD0039CD38 /* TableViewCell.swift in Sources */,
 				9A568E742018096E0039CD38 /* ViewController.swift in Sources */,
+				9A568E8720180E4A0039CD38 /* Api.swift in Sources */,
 				9A568E722018096E0039CD38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

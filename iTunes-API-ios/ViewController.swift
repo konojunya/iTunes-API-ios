@@ -8,18 +8,45 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    //MARK: - outlet
+    @IBOutlet weak var artwork: UIImageView!
+    @IBOutlet weak var musicName: UILabel!
+    @IBOutlet weak var artistName: UILabel!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    //MARK: - variables
+    var musics = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
+        self.getMusics()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    func getMusics() {
+    }
+    
+    //MARK: - tableView delegate method
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.musics.count;
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        return cell
+    }
 
 }
 
